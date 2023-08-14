@@ -1,0 +1,35 @@
+[2023-08-11 19:35:03.085] [Logger] [info] DUNK
+[2023-08-11 19:37:25.965] [Logger] [info] DUNK
+[2023-08-11 19:37:25.974] [Logger] [info] DUNK
+[2023-08-11 19:47:08.454] [Logger] [info] Log system has initialized!
+[2023-08-12 06:27:39.113] [Logger] [info] Log system has initialized!
+[2023-08-12 06:27:39.139] [Logger] [info] pEnumerator
+[2023-08-12 06:27:39.139] [Logger] [info] pCollection
+[2023-08-12 06:33:52.846] [Logger] [info] Log system has initialized!
+[2023-08-12 06:33:52.874] [Logger] [info] pEnumeratorhave been successfully released!
+[2023-08-12 06:33:52.875] [Logger] [info] pCollectionhave been successfully released!
+[2023-08-12 06:34:23.810] [Logger] [info] Log system has initialized!
+[2023-08-12 06:34:23.859] [Logger] [info] pEnumerator have been successfully released!
+[2023-08-12 06:34:23.860] [Logger] [info] pCollection have been successfully released!
+[2023-08-12 22:17:16.712] [Logger] [info] Log system has initialized!
+[2023-08-12 22:17:16.741] [Logger] [info] pEnumerator have been successfully released!
+[2023-08-12 22:17:16.746] [Logger] [info] pCollection have been successfully released!
+[2023-08-12 22:17:16.768] [Logger] [info] &8D@>2>5 0C48> (HDMI) (High Definition Audio Device)
+[2023-08-13 17:44:25.139] [Logger] [info] Log system has initialized!
+[2023-08-13 17:44:25.173] [Logger] [info] pEnumerator have been successfully released!
+[2023-08-13 17:44:25.178] [Logger] [info] pCollection have been successfully released!
+[2023-08-13 17:44:25.190] [Logger] [info] Цифровое аудио (HDMI) (High Definition Audio Device)
+[2023-08-13 17:55:21.813] [Logger] [info] Log system has initialized!
+[2023-08-13 17:55:21.829] [Logger] [info] pEnumerator have been successfully released!
+[2023-08-13 17:55:21.829] [Logger] [info] pCollection have been successfully released!
+[2023-08-13 17:55:21.841] [Logger] [info] Динамики (High Definition Audio Device)
+[2023-08-14 11:32:29.602] [Logger] [info] Log system has initialized!
+[2023-08-14 11:32:29.625] [Logger] [info] pEnumerator has been successfully released!
+[2023-08-14 11:32:29.626] [Logger] [info] pCollection has been successfully released!
+[2023-08-14 11:32:29.637] [Logger] [info] propStore has been successfully released!
+[2023-08-14 11:32:29.641] [Logger] [info] Цифровое аудио (HDMI) (High Definition Audio Device)
+[2023-08-14 21:16:31.434] [Logger] [info] Log system has initialized!
+[2023-08-14 21:16:31.453] [Logger] [info] pEnumerator has been successfully released!
+[2023-08-14 21:16:31.453] [Logger] [info] pCollection has been successfully released!
+[2023-08-14 21:16:31.455] [Logger] [info] propStore has been successfully released!
+[2023-08-14 21:16:31.457] [Logger] [info] Цифровое аудио (HDMI) (High Definition Audio Device)
