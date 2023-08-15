@@ -1,8 +1,8 @@
 #pragma once
 
+#include <Media/NotificationClient.h>
 #include <Audioclient.h>
 #include <mmdeviceapi.h>
-#include <functiondiscoverykeys.h>
 
 #include <Base.h>
 
@@ -13,7 +13,7 @@ namespace Media {
 	class Device
 	{
 	public:
-		Device(size_t nDevice = 0, DataFlow df = DataFlow::Render);
+		Device(size_t nDevice = 0);
 		Device(const std::wstring& deviceID);
 		~Device() = default;
 
@@ -21,9 +21,7 @@ namespace Media {
 		IAudioClient* Activate();
 
 	private:
-		IMMDevice* GetDevicePointer(const size_t nDevice, const DataFlow df) const;
-		IMMDevice* GetDevicePointer(const std::wstring& deviceID) const;
-		
 		COMScope<IMMDevice> m_pDevice;
 	};
-}
+
+} // namespace Media

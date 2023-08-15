@@ -33,3 +33,19 @@
 [2023-08-14 21:16:31.453] [Logger] [info] pCollection has been successfully released!
 [2023-08-14 21:16:31.455] [Logger] [info] propStore has been successfully released!
 [2023-08-14 21:16:31.457] [Logger] [info] Цифровое аудио (HDMI) (High Definition Audio Device)
+[2023-08-15 08:43:35.524] [Logger] [info] Log system has initialized!
+[2023-08-15 08:43:35.545] [Logger] [info] pCollection has been successfully released!
+[2023-08-15 08:43:35.552] [Logger] [info] propStore has been successfully released!
+[2023-08-15 08:43:35.554] [Logger] [info] Лин. вход (High Definition Audio Device)
+[2023-08-15 08:44:30.232] [Logger] [info] Log system has initialized!
+[2023-08-15 08:44:30.249] [Logger] [info] pCollection has been successfully released!
+[2023-08-15 08:44:30.252] [Logger] [info] propStore has been successfully released!
+[2023-08-15 08:44:30.253] [Logger] [info] Микрофон (WO Mic Device)
+[2023-08-15 08:50:13.432] [Logger] [info] Log system has initialized!
+[2023-08-15 08:50:13.450] [Logger] [info] pCollection has been successfully released!
+[2023-08-15 08:50:13.452] [Logger] [info] propStore has been successfully released!
+[2023-08-15 08:50:13.452] [Logger] [info] Микрофон (WO Mic Device)
+[2023-08-15 23:54:15.547] [Logger] [info] Log system has initialized!
+[2023-08-15 23:54:15.548] [Logger] [info] Hello world!
+[2023-08-15 23:54:15.570] [Logger] [info] propStore has been successfully released!
+[2023-08-15 23:54:15.571] [Logger] [info] Цифровое аудио (HDMI) (High Definition Audio Device)

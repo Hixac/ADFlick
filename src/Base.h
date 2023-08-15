@@ -1,6 +1,7 @@
 #pragma once
 
 #include <LoggingSystem.h>
+#include <memory>
 #include <wrl/client.h>
 
 #ifdef _DEBUG
@@ -9,8 +10,7 @@
 	#define LOG_INFO(x) Log::LoggingSystem::Send(x, Log::Types::Info)
 	#define LOG_ERROR(x) Log::LoggingSystem::Send(x, Log::Types::Error)
 
-	#define INIT_LOG() spdlog::set_level(spdlog::level::level_enum::debug);\
-					   Log::LoggingSystem::Instantiate("Logger");\
+	#define INIT_LOG() Log::LoggingSystem::Instantiate("Logger");\
 					   LOG_INFO("Log system has initialized!")
 #else
 	#define LOG_WARN(x)
@@ -34,3 +34,11 @@
 
 template<typename T>
 using COMScope = Microsoft::WRL::ComPtr<T>;
+
+template<typename T>
+using Scope = std::unique_ptr<T>;
+template<typename T, typename ... Args>
+constexpr Scope<T> CreateScope(Args&& ... args)
+{
+	return std::make_unique<T>(std::forward<Args>(args)...);
+}

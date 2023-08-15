@@ -152,13 +152,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Media\Audio.cpp" />
     <ClCompile Include="src\Media\Device.cpp" />
+    <ClCompile Include="src\Media\DeviceEnumerator.cpp" />
     <ClCompile Include="src\Media\NotificationClient.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Base.h" />
     <ClInclude Include="src\LoggingSystem.h" />
+    <ClInclude Include="src\Media\Audio.h" />
     <ClInclude Include="src\Media\Device.h" />
+    <ClInclude Include="src\Media\DeviceEnumerator.h" />
     <ClInclude Include="src\Media\NotificationClient.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

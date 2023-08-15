@@ -1,6 +1,13 @@
 #include <Media/NotificationClient.h>
 
+#include <Media/Device.h>
+
 namespace Media {
+
+	NotificationClient::~NotificationClient()
+	{
+		Release();
+	}
 
 	HRESULT STDMETHODCALLTYPE NotificationClient::QueryInterface(REFIID riid, void** ppvInterface)
 	{

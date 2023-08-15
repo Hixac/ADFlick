@@ -21,7 +21,10 @@ namespace Log {
 			m_IsInited = true;
 
 			auto logger = spdlog::basic_logger_mt(name, "log/" + name + ".txt");
-			m_Name = name;
+			logger->set_level(spdlog::level::level_enum::debug);
+			logger->flush_on(spdlog::level::info);
+
+			m_Name = name; // Because of the complexity type I use spdlog::get instead of logger itself.
 		}
 
 		static void Send(const std::string text, const Types type)

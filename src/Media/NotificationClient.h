@@ -1,15 +1,15 @@
 #pragma once
 
+#include <mmdeviceapi.h>
 #include <Base.h>
-#include <Media/Device.h>
 
 namespace Media {
 
 	class NotificationClient : public IMMNotificationClient
 	{
 	public:
-		NotificationClient() : m_CountRef(1), m_pEnumerator(nullptr) { }
-		~NotificationClient() = default;
+		NotificationClient() : m_CountRef(1) { }
+		~NotificationClient();
 
 		// IUnknown
 		HRESULT STDMETHODCALLTYPE QueryInterface(REFIID riid, void** ppvInterface) override;
@@ -26,7 +26,6 @@ namespace Media {
 
 	private:
 		size_t m_CountRef;
-		COMScope<IMMDeviceEnumerator> m_pEnumerator;
 	};
 
 }
