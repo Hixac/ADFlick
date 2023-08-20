@@ -1,4 +1,4 @@
-#include <Media/NotificationClient.h>
+#include <Media/Notify/NotificationClient.h>
 
 #include <Media/Device.h>
 

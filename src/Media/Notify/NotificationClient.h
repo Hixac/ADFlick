@@ -8,8 +8,7 @@ namespace Media {
 	class NotificationClient : public IMMNotificationClient
 	{
 	public:
-		NotificationClient() : m_CountRef(1) { }
-		~NotificationClient();
+		static NotificationClient& GetNotifyInstance() { static NotificationClient instance; return instance; }
 
 		// IUnknown
 		HRESULT STDMETHODCALLTYPE QueryInterface(REFIID riid, void** ppvInterface) override;
@@ -25,6 +24,12 @@ namespace Media {
 		HRESULT __stdcall OnPropertyValueChanged(LPCWSTR pwstrDeviceId, const PROPERTYKEY key) override;
 
 	private:
+		NotificationClient() : m_CountRef(1) { }
+		~NotificationClient();
+
+		NotificationClient(NotificationClient const&)				= delete;
+		NotificationClient& operator=(NotificationClient const&)	= delete;
+
 		size_t m_CountRef;
 	};
 

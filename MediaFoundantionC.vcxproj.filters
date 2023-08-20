@@ -18,16 +18,25 @@
     <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Media\NotificationClient.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\Media\Device.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\Media\DeviceEnumerator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Media\Audio.cpp">
+    <ClCompile Include="src\Media\Notify\AudioSessionNotify.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Media\Notify\NotificationClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Media\Notify\AudioEndpointNotify.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Media\AudioClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Media\Service.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -41,13 +50,28 @@
     <ClInclude Include="src\Media\Device.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Media\NotificationClient.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Media\Audio.h">
+    <ClInclude Include="src\Media\AudioClient.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\Media\DeviceEnumerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Media\Notify\AudioSessionNotify.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Media\Notify\NotificationClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Media\Notify\AudioEndpointNotify.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Media\Volume.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Media\Service.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Media\Audio.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

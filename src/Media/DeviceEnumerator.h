@@ -1,13 +1,12 @@
 #pragma once
 
-#include <Media/NotificationClient.h>
+#include <Media/Notify/NotificationClient.h>
 #include <mmdeviceapi.h>
 
 #include <Base.h>
 
 namespace Media {
 
-	// THREAD-SAFE (!!!)
 	class DeviceEnumerator
 	{
 	public:
@@ -26,8 +25,6 @@ namespace Media {
 
 		COMScope<IMMDeviceCollection> m_pCollection;
 		COMScope<IMMDeviceEnumerator> m_pEnumerator;
-
-		Scope<NotificationClient> m_pNotify;
 
 		DeviceEnumerator()										= default;
 		~DeviceEnumerator()										= default;

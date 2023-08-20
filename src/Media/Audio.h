@@ -1,24 +1,17 @@
 #pragma once
 
-#include <Media/Device.h>
-#include <AudioClient.h>
+#include <Media/AudioClient.h>
+#include <Media/Volume.h>
+#include <Media/Service.h>
 
 namespace Media {
 
-	enum class SessionState
-	{
-		Active = 0, // Running state
-		Inactive, 	// Stopped state
-		Expired		// After a session has been inactive for a period of time, the system changes the state of the session from inactive to expired.
-	};
-
-	class AudioSession
+	class Audio 
 	{
 	public:
-		AudioSession(IMMDevice* device);
+		Audio();
 
-	private:
-		COMScope<IAudioClient> m_pAudioClient;
+		// TODO: Add audiosource reader and writer :(((
 	};
 
 } // namespace Media

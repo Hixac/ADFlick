@@ -34,14 +34,13 @@ namespace Media {
 
 	void DeviceEnumerator::RegisterCallback()
 	{
-		m_pNotify = CreateScope<NotificationClient>();
-		HRESULT hr = GetEnumeratorPointer()->RegisterEndpointNotificationCallback(m_pNotify.get());
+		HRESULT hr = GetEnumeratorPointer()->RegisterEndpointNotificationCallback(&NotificationClient::GetNotifyInstance());
 		CHECK(hr);
 	}
 
 	void DeviceEnumerator::UnregisterCallback()
 	{
-		HRESULT hr = GetEnumeratorPointer()->UnregisterEndpointNotificationCallback(m_pNotify.get());
+		HRESULT hr = GetEnumeratorPointer()->UnregisterEndpointNotificationCallback(&NotificationClient::GetNotifyInstance());
 		CHECK(hr);
 	}
 

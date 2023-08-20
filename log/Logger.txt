@@ -49,3 +49,27 @@
 [2023-08-15 23:54:15.548] [Logger] [info] Hello world!
 [2023-08-15 23:54:15.570] [Logger] [info] propStore has been successfully released!
 [2023-08-15 23:54:15.571] [Logger] [info] Цифровое аудио (HDMI) (High Definition Audio Device)
+[2023-08-16 10:05:15.395] [Logger] [info] Log system has initialized!
+[2023-08-16 10:05:15.397] [Logger] [info] Hello world!
+[2023-08-16 10:05:15.420] [Logger] [info] propStore has been successfully released!
+[2023-08-16 10:05:15.424] [Logger] [info] Цифровое аудио (HDMI) (High Definition Audio Device)
+[2023-08-16 10:05:22.843] [Logger] [info] propStore has been successfully released!
+[2023-08-16 10:05:22.843] [Logger] [info] Цифровое аудио (S/PDIF) (High Definition Audio Device) - eRender - eConsole: is new default device!
+[2023-08-16 10:05:22.845] [Logger] [info] propStore has been successfully released!
+[2023-08-16 10:05:22.847] [Logger] [info] Цифровое аудио (S/PDIF) (High Definition Audio Device) - eRender - eMultimedia: is new default device!
+[2023-08-16 10:05:22.848] [Logger] [info] propStore has been successfully released!
+[2023-08-16 10:05:22.849] [Logger] [info] Цифровое аудио (S/PDIF) (High Definition Audio Device) - eRender - eMultimedia: is new default device!
+[2023-08-16 10:05:22.851] [Logger] [info] propStore has been successfully released!
+[2023-08-16 10:05:22.851] [Logger] [info] Цифровое аудио (S/PDIF) (High Definition Audio Device) - eRender - eConsole: is new default device!
+[2023-08-16 10:05:22.862] [Logger] [info] propStore has been successfully released!
+[2023-08-16 10:05:22.863] [Logger] [info] Цифровое аудио (S/PDIF) (High Definition Audio Device) - eRender - eCommunications: is new default device!
+[2023-08-16 10:05:25.937] [Logger] [info] propStore has been successfully released!
+[2023-08-16 10:05:25.938] [Logger] [info] Динамики (High Definition Audio Device) - eRender - eConsole: is new default device!
+[2023-08-16 10:05:25.940] [Logger] [info] propStore has been successfully released!
+[2023-08-16 10:05:25.941] [Logger] [info] Динамики (High Definition Audio Device) - eRender - eMultimedia: is new default device!
+[2023-08-16 10:05:25.949] [Logger] [info] propStore has been successfully released!
+[2023-08-16 10:05:25.949] [Logger] [info] Динамики (High Definition Audio Device) - eRender - eMultimedia: is new default device!
+[2023-08-16 10:05:25.955] [Logger] [info] propStore has been successfully released!
+[2023-08-16 10:05:25.970] [Logger] [info] Динамики (High Definition Audio Device) - eRender - eConsole: is new default device!
+[2023-08-16 10:05:25.974] [Logger] [info] propStore has been successfully released!
+[2023-08-16 10:05:25.975] [Logger] [info] Динамики (High Definition Audio Device) - eRender - eCommunications: is new default device!
