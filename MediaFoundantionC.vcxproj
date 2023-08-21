@@ -161,6 +161,7 @@
     <ClCompile Include="src\Media\Notify\NotificationClient.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\AudioSource\WaveOut.h" />
     <ClInclude Include="src\Base.h" />
     <ClInclude Include="src\LoggingSystem.h" />
     <ClInclude Include="src\Media\Audio.h" />

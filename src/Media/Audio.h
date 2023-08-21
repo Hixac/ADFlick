@@ -10,7 +10,7 @@ namespace Media {
 	{
 	public:
 		Audio();
-
+		
 		// TODO: Add audiosource reader and writer :(((
 	};
 

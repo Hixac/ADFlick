@@ -74,5 +74,8 @@
     <ClInclude Include="src\Media\Audio.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\AudioSource\WaveOut.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
