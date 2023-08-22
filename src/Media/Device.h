@@ -1,8 +1,8 @@
 #pragma once
 
-#include <Media/Notify/NotificationClient.h>
 #include <Audioclient.h>
 #include <mmdeviceapi.h>
+#include <Media/Notify/NotificationClient.h>
 
 #include <Base.h>
 
@@ -17,8 +17,7 @@ namespace Media {
 		Device(const std::wstring& deviceID);
 		~Device() = default;
 
-		template<typename T>
-		T* Activate(REFIID riid);
+		IAudioClient* Activate();
 
 		std::wstring GetDeviceName();
 	private:

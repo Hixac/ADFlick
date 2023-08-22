@@ -34,11 +34,10 @@ namespace Media {
 		}
 	}
 
-	template<typename T>
-	T* Device::Activate(REFIID riid)
+	IAudioClient* Device::Activate()
 	{
-		T* pHolder;
-		m_pDevice->Activate(riid, CLSCTX_ALL, NULL, reinterpret_cast<void**>(pHolder));
+		IAudioClient* pHolder;
+		m_pDevice->Activate(__uuidof(IAudioClient), CLSCTX_ALL, NULL, reinterpret_cast<void**>(&pHolder));
 
 		return pHolder;
 	}

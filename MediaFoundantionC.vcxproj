@@ -151,6 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\AudioSource\WaveOut.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Media\AudioClient.cpp" />
     <ClCompile Include="src\Media\Service.cpp" />

@@ -1,11 +1,11 @@
-#include "AudioClient.h"
+#include <Media/AudioClient.h>
 
 namespace Media {
 
     AudioClient::AudioClient(Device& device)
         : m_Session(GUID_NULL), m_pDevice(CreateScope<Device>(device))
     {
-        IAudioClient* pClient = m_pDevice->Activate<IAudioClient>(IID_IAudioClient);
+        IAudioClient* pClient = m_pDevice->Activate();
         m_pAudioClient = COMScope<IAudioClient>(pClient);
     }
 

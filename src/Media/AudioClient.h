@@ -2,7 +2,8 @@
 
 #include <Media/Device.h>
 #include <Media/Volume.h>
-#include <AudioClient.h>
+
+#include <Audioclient.h>
 
 namespace Media {
 
