@@ -1,9 +1,9 @@
 #pragma once
 
 #include <Base.h>
+#include <FileRead.h>
 
 #include <vector>
-#include <fstream>
 
 namespace Media {
 
@@ -23,13 +23,13 @@ namespace Media {
 	class WaveOut
 	{
 	public:
-		WaveOut(std::string filepath);
+		WaveOut(const std::string& filepath);
 		~WaveOut() = default;
 
 	private:
-		std::fstream m_File;
+		Format GetFileFormat();
 
-		std::vector<uint32_t> m_Data;
+		WavData m_WaveHeader;
 	};
 	
 } // namespace Media

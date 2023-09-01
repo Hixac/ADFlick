@@ -92,12 +92,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>src/; ext/</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>H:\projects\boost_1_83_0;src/;ext/</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>H:\projects\boost_1_83_0\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -108,7 +109,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>src/; ext/</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>H:\projects\boost_1_83_0;src/;ext/</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
@@ -116,6 +117,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>H:\projects\boost_1_83_0\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -124,12 +126,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>src/; ext/</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>H:\projects\boost_1_83_0;src/;ext/</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>H:\projects\boost_1_83_0\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -140,7 +143,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>src/; ext/</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>H:\projects\boost_1_83_0;src/;ext/</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
@@ -148,10 +151,12 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>H:\projects\boost_1_83_0\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\AudioSource\WaveOut.cpp" />
+    <ClCompile Include="src\FileRead.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Media\AudioClient.cpp" />
     <ClCompile Include="src\Media\Service.cpp" />
@@ -162,8 +167,299 @@
     <ClCompile Include="src\Media\Notify\NotificationClient.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ext\boost\align.hpp" />
+    <ClInclude Include="ext\boost\aligned_storage.hpp" />
+    <ClInclude Include="ext\boost\any.hpp" />
+    <ClInclude Include="ext\boost\array.hpp" />
+    <ClInclude Include="ext\boost\asio.hpp" />
+    <ClInclude Include="ext\boost\assert.hpp" />
+    <ClInclude Include="ext\boost\assign.hpp" />
+    <ClInclude Include="ext\boost\atomic.hpp" />
+    <ClInclude Include="ext\boost\beast.hpp" />
+    <ClInclude Include="ext\boost\bimap.hpp" />
+    <ClInclude Include="ext\boost\bind.hpp" />
+    <ClInclude Include="ext\boost\blank.hpp" />
+    <ClInclude Include="ext\boost\blank_fwd.hpp" />
+    <ClInclude Include="ext\boost\callable_traits.hpp" />
+    <ClInclude Include="ext\boost\call_traits.hpp" />
+    <ClInclude Include="ext\boost\cast.hpp" />
+    <ClInclude Include="ext\boost\cerrno.hpp" />
+    <ClInclude Include="ext\boost\checked_delete.hpp" />
+    <ClInclude Include="ext\boost\chrono.hpp" />
+    <ClInclude Include="ext\boost\circular_buffer.hpp" />
+    <ClInclude Include="ext\boost\circular_buffer_fwd.hpp" />
+    <ClInclude Include="ext\boost\compressed_pair.hpp" />
+    <ClInclude Include="ext\boost\compute.hpp" />
+    <ClInclude Include="ext\boost\concept_archetype.hpp" />
+    <ClInclude Include="ext\boost\concept_check.hpp" />
+    <ClInclude Include="ext\boost\config.hpp" />
+    <ClInclude Include="ext\boost\contract.hpp" />
+    <ClInclude Include="ext\boost\contract_macro.hpp" />
+    <ClInclude Include="ext\boost\convert.hpp" />
+    <ClInclude Include="ext\boost\crc.hpp" />
+    <ClInclude Include="ext\boost\cregex.hpp" />
+    <ClInclude Include="ext\boost\cstdfloat.hpp" />
+    <ClInclude Include="ext\boost\cstdint.hpp" />
+    <ClInclude Include="ext\boost\cstdlib.hpp" />
+    <ClInclude Include="ext\boost\current_function.hpp" />
+    <ClInclude Include="ext\boost\cxx11_char_types.hpp" />
+    <ClInclude Include="ext\boost\date_time.hpp" />
+    <ClInclude Include="ext\boost\describe.hpp" />
+    <ClInclude Include="ext\boost\dll.hpp" />
+    <ClInclude Include="ext\boost\dynamic_bitset.hpp" />
+    <ClInclude Include="ext\boost\dynamic_bitset_fwd.hpp" />
+    <ClInclude Include="ext\boost\enable_shared_from_this.hpp" />
+    <ClInclude Include="ext\boost\endian.hpp" />
+    <ClInclude Include="ext\boost\exception_ptr.hpp" />
+    <ClInclude Include="ext\boost\filesystem.hpp" />
+    <ClInclude Include="ext\boost\flyweight.hpp" />
+    <ClInclude Include="ext\boost\foreach.hpp" />
+    <ClInclude Include="ext\boost\foreach_fwd.hpp" />
+    <ClInclude Include="ext\boost\format.hpp" />
+    <ClInclude Include="ext\boost\function.hpp" />
+    <ClInclude Include="ext\boost\functional.hpp" />
+    <ClInclude Include="ext\boost\function_equal.hpp" />
+    <ClInclude Include="ext\boost\function_output_iterator.hpp" />
+    <ClInclude Include="ext\boost\generator_iterator.hpp" />
+    <ClInclude Include="ext\boost\geometry.hpp" />
+    <ClInclude Include="ext\boost\get_pointer.hpp" />
+    <ClInclude Include="ext\boost\gil.hpp" />
+    <ClInclude Include="ext\boost\hana.hpp" />
+    <ClInclude Include="ext\boost\histogram.hpp" />
+    <ClInclude Include="ext\boost\hof.hpp" />
+    <ClInclude Include="ext\boost\implicit_cast.hpp" />
+    <ClInclude Include="ext\boost\indirect_reference.hpp" />
+    <ClInclude Include="ext\boost\integer.hpp" />
+    <ClInclude Include="ext\boost\integer_fwd.hpp" />
+    <ClInclude Include="ext\boost\integer_traits.hpp" />
+    <ClInclude Include="ext\boost\intrusive_ptr.hpp" />
+    <ClInclude Include="ext\boost\io_fwd.hpp" />
+    <ClInclude Include="ext\boost\is_placeholder.hpp" />
+    <ClInclude Include="ext\boost\iterator.hpp" />
+    <ClInclude Include="ext\boost\iterator_adaptors.hpp" />
+    <ClInclude Include="ext\boost\json.hpp" />
+    <ClInclude Include="ext\boost\lambda2.hpp" />
+    <ClInclude Include="ext\boost\leaf.hpp" />
+    <ClInclude Include="ext\boost\lexical_cast.hpp" />
+    <ClInclude Include="ext\boost\limits.hpp" />
+    <ClInclude Include="ext\boost\locale.hpp" />
+    <ClInclude Include="ext\boost\local_function.hpp" />
+    <ClInclude Include="ext\boost\make_default.hpp" />
+    <ClInclude Include="ext\boost\make_shared.hpp" />
+    <ClInclude Include="ext\boost\make_unique.hpp" />
+    <ClInclude Include="ext\boost\math_fwd.hpp" />
+    <ClInclude Include="ext\boost\memory_order.hpp" />
+    <ClInclude Include="ext\boost\mem_fn.hpp" />
+    <ClInclude Include="ext\boost\metaparse.hpp" />
+    <ClInclude Include="ext\boost\mp11.hpp" />
+    <ClInclude Include="ext\boost\mpi.hpp" />
+    <ClInclude Include="ext\boost\multi_array.hpp" />
+    <ClInclude Include="ext\boost\multi_index_container.hpp" />
+    <ClInclude Include="ext\boost\multi_index_container_fwd.hpp" />
+    <ClInclude Include="ext\boost\mysql.hpp" />
+    <ClInclude Include="ext\boost\next_prior.hpp" />
+    <ClInclude Include="ext\boost\noncopyable.hpp" />
+    <ClInclude Include="ext\boost\nondet_random.hpp" />
+    <ClInclude Include="ext\boost\none.hpp" />
+    <ClInclude Include="ext\boost\none_t.hpp" />
+    <ClInclude Include="ext\boost\non_type.hpp" />
+    <ClInclude Include="ext\boost\operators.hpp" />
+    <ClInclude Include="ext\boost\operators_v1.hpp" />
+    <ClInclude Include="ext\boost\optional.hpp" />
+    <ClInclude Include="ext\boost\outcome.hpp" />
+    <ClInclude Include="ext\boost\parameter.hpp" />
+    <ClInclude Include="ext\boost\pfr.hpp" />
+    <ClInclude Include="ext\boost\phoenix.hpp" />
+    <ClInclude Include="ext\boost\pointee.hpp" />
+    <ClInclude Include="ext\boost\pointer_cast.hpp" />
+    <ClInclude Include="ext\boost\pointer_to_other.hpp" />
+    <ClInclude Include="ext\boost\polymorphic_cast.hpp" />
+    <ClInclude Include="ext\boost\polymorphic_pointer_cast.hpp" />
+    <ClInclude Include="ext\boost\predef.h" />
+    <ClInclude Include="ext\boost\preprocessor.hpp" />
+    <ClInclude Include="ext\boost\process.hpp" />
+    <ClInclude Include="ext\boost\program_options.hpp" />
+    <ClInclude Include="ext\boost\progress.hpp" />
+    <ClInclude Include="ext\boost\python.hpp" />
+    <ClInclude Include="ext\boost\qvm.hpp" />
+    <ClInclude Include="ext\boost\qvm_lite.hpp" />
+    <ClInclude Include="ext\boost\random.hpp" />
+    <ClInclude Include="ext\boost\range.hpp" />
+    <ClInclude Include="ext\boost\ratio.hpp" />
+    <ClInclude Include="ext\boost\rational.hpp" />
+    <ClInclude Include="ext\boost\ref.hpp" />
+    <ClInclude Include="ext\boost\regex.h" />
+    <ClInclude Include="ext\boost\regex.hpp" />
+    <ClInclude Include="ext\boost\regex_fwd.hpp" />
+    <ClInclude Include="ext\boost\scoped_array.hpp" />
+    <ClInclude Include="ext\boost\scoped_ptr.hpp" />
+    <ClInclude Include="ext\boost\scope_exit.hpp" />
+    <ClInclude Include="ext\boost\shared_array.hpp" />
+    <ClInclude Include="ext\boost\shared_container_iterator.hpp" />
+    <ClInclude Include="ext\boost\shared_ptr.hpp" />
+    <ClInclude Include="ext\boost\signals2.hpp" />
+    <ClInclude Include="ext\boost\smart_ptr.hpp" />
+    <ClInclude Include="ext\boost\spirit.hpp" />
+    <ClInclude Include="ext\boost\stacktrace.hpp" />
+    <ClInclude Include="ext\boost\static_assert.hpp" />
+    <ClInclude Include="ext\boost\static_string.hpp" />
+    <ClInclude Include="ext\boost\swap.hpp" />
+    <ClInclude Include="ext\boost\system.hpp" />
+    <ClInclude Include="ext\boost\thread.hpp" />
+    <ClInclude Include="ext\boost\throw_exception.hpp" />
+    <ClInclude Include="ext\boost\timer.hpp" />
+    <ClInclude Include="ext\boost\tokenizer.hpp" />
+    <ClInclude Include="ext\boost\token_functions.hpp" />
+    <ClInclude Include="ext\boost\token_iterator.hpp" />
+    <ClInclude Include="ext\boost\type.hpp" />
+    <ClInclude Include="ext\boost\type_index.hpp" />
+    <ClInclude Include="ext\boost\type_traits.hpp" />
+    <ClInclude Include="ext\boost\unordered_map.hpp" />
+    <ClInclude Include="ext\boost\unordered_set.hpp" />
+    <ClInclude Include="ext\boost\url.hpp" />
+    <ClInclude Include="ext\boost\utility.hpp" />
+    <ClInclude Include="ext\boost\variant.hpp" />
+    <ClInclude Include="ext\boost\variant2.hpp" />
+    <ClInclude Include="ext\boost\version.hpp" />
+    <ClInclude Include="ext\boost\visit_each.hpp" />
+    <ClInclude Include="ext\boost\wave.hpp" />
+    <ClInclude Include="ext\boost\weak_ptr.hpp" />
+    <ClInclude Include="ext\boost\xpressive\basic_regex.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\access.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\action.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\adaptor.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\finder.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\flow_control.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\icase.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\linker.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\list.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matchers.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\action_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\alternate_end_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\alternate_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\any_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\assert_bol_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\assert_bos_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\assert_eol_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\assert_eos_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\assert_line_base.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\assert_word_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\attr_begin_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\attr_end_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\attr_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\charset_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\end_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\epsilon_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\keeper_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\literal_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\logical_newline_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\lookahead_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\lookbehind_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\mark_begin_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\mark_end_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\mark_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\optional_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\posix_charset_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\predicate_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\range_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\regex_byref_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\regex_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\repeat_begin_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\repeat_end_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\set_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\simple_repeat_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\string_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\matcher\true_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\optimize.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\peeker.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\quant_style.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\regex_domain.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\regex_impl.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\results_cache.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\state.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\sub_match_impl.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\core\sub_match_vector.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\detail_fwd.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\dynamic\dynamic.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\dynamic\matchable.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\dynamic\parser.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\dynamic\parser_enum.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\dynamic\parser_traits.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\dynamic\parse_charset.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\dynamic\sequence.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\static\compile.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\static\grammar.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\static\is_pure.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\static\modifier.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\static\placeholders.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\static\static.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\static\transforms\as_action.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\static\transforms\as_alternate.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\static\transforms\as_independent.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\static\transforms\as_inverse.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\static\transforms\as_marker.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\static\transforms\as_matcher.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\static\transforms\as_modifier.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\static\transforms\as_quantifier.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\static\transforms\as_sequence.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\static\transforms\as_set.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\static\transmogrify.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\static\type_traits.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\static\visitor.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\static\width_of.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\utility\algorithm.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\utility\any.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\utility\boyer_moore.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\utility\chset\basic_chset.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\utility\chset\basic_chset.ipp" />
+    <ClInclude Include="ext\boost\xpressive\detail\utility\chset\chset.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\utility\chset\range_run.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\utility\chset\range_run.ipp" />
+    <ClInclude Include="ext\boost\xpressive\detail\utility\cons.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\utility\counted_base.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\utility\dont_care.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\utility\hash_peek_bitset.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\utility\ignore_unused.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\utility\literals.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\utility\never_true.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\utility\save_restore.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\utility\sequence_stack.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\utility\symbols.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\utility\tracking_ptr.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\utility\traits_utils.hpp" />
+    <ClInclude Include="ext\boost\xpressive\detail\utility\width.hpp" />
+    <ClInclude Include="ext\boost\xpressive\match_results.hpp" />
+    <ClInclude Include="ext\boost\xpressive\regex_actions.hpp" />
+    <ClInclude Include="ext\boost\xpressive\regex_algorithms.hpp" />
+    <ClInclude Include="ext\boost\xpressive\regex_compiler.hpp" />
+    <ClInclude Include="ext\boost\xpressive\regex_constants.hpp" />
+    <ClInclude Include="ext\boost\xpressive\regex_error.hpp" />
+    <ClInclude Include="ext\boost\xpressive\regex_iterator.hpp" />
+    <ClInclude Include="ext\boost\xpressive\regex_primitives.hpp" />
+    <ClInclude Include="ext\boost\xpressive\regex_token_iterator.hpp" />
+    <ClInclude Include="ext\boost\xpressive\regex_traits.hpp" />
+    <ClInclude Include="ext\boost\xpressive\sub_match.hpp" />
+    <ClInclude Include="ext\boost\xpressive\traits\cpp_regex_traits.hpp" />
+    <ClInclude Include="ext\boost\xpressive\traits\c_regex_traits.hpp" />
+    <ClInclude Include="ext\boost\xpressive\traits\detail\c_ctype.hpp" />
+    <ClInclude Include="ext\boost\xpressive\traits\null_regex_traits.hpp" />
+    <ClInclude Include="ext\boost\xpressive\xpressive.hpp" />
+    <ClInclude Include="ext\boost\xpressive\xpressive_dynamic.hpp" />
+    <ClInclude Include="ext\boost\xpressive\xpressive_fwd.hpp" />
+    <ClInclude Include="ext\boost\xpressive\xpressive_static.hpp" />
+    <ClInclude Include="ext\boost\xpressive\xpressive_typeof.hpp" />
+    <ClInclude Include="ext\boost\yap\algorithm.hpp" />
+    <ClInclude Include="ext\boost\yap\algorithm_fwd.hpp" />
+    <ClInclude Include="ext\boost\yap\config.hpp" />
+    <ClInclude Include="ext\boost\yap\detail\algorithm.hpp" />
+    <ClInclude Include="ext\boost\yap\detail\transform.hpp" />
+    <ClInclude Include="ext\boost\yap\expression.hpp" />
+    <ClInclude Include="ext\boost\yap\print.hpp" />
+    <ClInclude Include="ext\boost\yap\user_macros.hpp" />
+    <ClInclude Include="ext\boost\yap\yap.hpp" />
     <ClInclude Include="src\AudioSource\WaveOut.h" />
     <ClInclude Include="src\Base.h" />
+    <ClInclude Include="src\FileRead.h" />
     <ClInclude Include="src\LoggingSystem.h" />
     <ClInclude Include="src\Media\Audio.h" />
     <ClInclude Include="src\Media\AudioClient.h" />
@@ -174,6 +470,9 @@
     <ClInclude Include="src\Media\Notify\AudioSessionNotify.h" />
     <ClInclude Include="src\Media\Notify\NotificationClient.h" />
     <ClInclude Include="src\Media\Volume.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="res\w.wav" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

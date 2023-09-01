@@ -2,13 +2,14 @@
 #include <Media/DeviceEnumerator.h>
 #include <AudioSource/WaveOut.h>
 
-#include <iostream>
+#include <boost/filesystem.hpp>
 
 int main(void)
 {
 	INIT_LOG();
 
-	Media::WaveOut("res/w.wav");
+	std::string path = boost::filesystem::absolute("res\\w.wav").string();
+	Media::WaveOut audio(path);
 
 	return 0;
 }
